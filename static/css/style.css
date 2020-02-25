@@ -1,0 +1,294 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.parallax {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(graffitiwall.jpg);
+    
+    /* Set a specific height */
+    height: 100vh;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.spacer10{
+  height: 10%;
+}
+.spacer {
+    height: 20%;
+}
+
+.logocontainer {
+    font-family: streetsoul;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 10em;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.line {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    font-family: sister;
+    font-size: 0.5em;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.infolink {
+  text-decoration: none;
+  position: absolute;
+  width: 800px;
+  bottom: 15%;
+  font-family: dragon;
+  font-size: 2.5em;
+}
+.infolink:hover {
+  text-decoration: none;
+  color: white;
+}
+.rotatel {
+    transform: rotate(-90deg);
+}
+.rotater {
+    transform: rotate(90deg)
+}
+
+.info {
+    height: 100vh;
+    background-image: url(bloodrain2.svg);
+    background-size: cover;
+}
+
+.aboutheader {
+  font-family: streetsoul;
+  font-size: 5em;
+  color: white;
+}
+.maintext {
+  font-size: 0.5em;
+  color: white;
+  font-family: dragon;
+
+}
+
+@font-face {
+    font-family: sister;
+    src: url(fonts/sister-spray.ttf)
+}
+
+@font-face {
+    font-family: streetsoul;
+    src: url(fonts/street-soul.ttf)
+}
+
+@font-face {
+    font-family: dragon;
+    src: url(fonts/eight-bit-dragon.otf)
+}
+
+/* Glitch effect */
+  
+  .glitch {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 8px;
+    /*Create overlap*/
+    
+    margin: 0;
+    line-height: 0;
+    /*Animation*/
+    
+    animation: glitch1 2.5s infinite;
+  }
+  
+  h1:nth-child(2) {
+    color: #67f3da;
+    animation: glitch2 2.5s infinite;
+  }
+  
+  h1:nth-child(3) {
+    color: #f16f6f;
+    animation: glitch3 2.5s infinite;
+  }
+  /*Keyframes*/
+  
+  @keyframes glitch1 {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glitch2 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(-2px, -3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(-5px, -2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(-5px, -1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(-2px, -6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+  
+  @keyframes glitch3 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(2px, 3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(5px, 2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(5px, 1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(2px, 6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
